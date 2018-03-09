@@ -24,6 +24,8 @@ for (i = 0; i < (canvasWidth/wallSize)-2; i++) {
 var index = fw.createIndex(entities, wallSize);
 entities.push(new Hero(100, 100, index));
 
+console.log(index);
+
 function update() {
    for (const entity of entities) {
        entity.update();

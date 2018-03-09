@@ -13,9 +13,9 @@ class Hero extends fw.Entity {
     }
 
     moveIfPressed(key, x, y){
-        for (var entity in index) {
+        /*for (var entity in index) {
             if(fw.rectIntersect()) return;
-        }   
+        }*/
         if(fw.isDown(key)){
             this.x+=x;
             this.y+=y;

@@ -1,7 +1,8 @@
 class Hero extends fw.Entity {
-    constructor(x, y){
+    constructor(x, y, index){
         super(x,y);
         this.anim = 0;
+        this.index = index;
     }
 
     update(){
@@ -12,6 +13,9 @@ class Hero extends fw.Entity {
     }
 
     moveIfPressed(key, x, y){
+        for (var entity in index) {
+            if(fw.rectIntersect()) return;
+        }   
         if(fw.isDown(key)){
             this.x+=x;
             this.y+=y;
